@@ -1,10 +1,20 @@
 <!doctype html>
 <html>
 <head>
-	<title>WEB1-html</title>
 	<meta charset="utf-8">
+	<style>
+		body.white{
+			background-color: white;
+			color: black;
+		}
+		body.black{
+			background-color: black;
+			color:white;
+		}
+	</style>
+	<title>WEB1-html</title>
 </head>
-<body>
+<body id="target">
 	<h1><a href="index.html">WEB</a></h1>
 	<ol>
 		<li><a href="html.html">HTML</a></li>
@@ -16,7 +26,10 @@
 		<li>k8805...</li>
 	</ul>
 	<h1>JavaScript란 무엇인가?</h1>
-	<p>JavaScript is....
-	</p>
-	<p style="margin-top:45px;"> JavaScript elements are the... </p>
+	<p>JavaScript is....</p>
+	<p style="margin-top:45px;">JavaScript elements are the... </p>
+	<div id="control">
+		<input type = "button" value="white" onclick="document.getElementById('target').className='white'"/>
+		<input type="button" value="black" onclick="document.getElementById('target').className='black'"/>
+	  </div>
 </body>
